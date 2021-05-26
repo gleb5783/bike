@@ -1,40 +1,42 @@
 {
-  "name": "bike",
-  "private": true,
-  "description": "Велосипеды",
+  "name": "Liga-A-start-template",
+  "version": "1.0.0",
+  "description": "Стартовый шаблон сборки Лиги А",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.0.0",
-    "autoprefixer": "10.0.2",
-    "browser-sync": "^2.26.14",
-    "del": "^6.0.0",
-    "gulp": "^4.0.2",
-    "gulp-cli": "^2.3.0",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-less": "4.0.1",
-    "gulp-plumber": "1.2.1",
-    "gulp-postcss": "9.0.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-sourcemaps": "3.0.0",
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "autoprefixer": "9.5.x",
+    "browser-sync": "2.26.x",
+    "gulp": "4.0.x",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "8.0.x",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "4.0.x",
+    "gulp-sourcemaps": "2.6.x",
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
-    "postcss": "^8.3.0",
-    "postcss-csso": "^5.0.0",
-    "rename": "^1.0.4",
-    "stylelint": "13.7.2",
-    "stylelint-config-htmlacademy": "0.1.4"
+    "pixel-glass": "^1.0.13",
+    "posthtml-include": "^1.2.0",
+    "stylelint": "9.10.x",
+    "stylelint-config-htmlacademy": "0.1.x",
+    "eslint": "4.16.0",
+    "eslint-config-htmlacademy": "0.4.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
-    "test": "npm run editorconfig && npm run stylelint",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint && eslint source/js/",
     "build": "gulp build",
-    "start": "gulp"
+    "start": "gulp start",
+    "webp": "gulp webp",
+    "sprite": "gulp sprite"
   },
   "browserslist": [
     "last 2 versions",
-    "not dead",
-    "not ie <= 11"
+    "IE 11",
+    "Firefox ESR"
   ],
   "editorconfig-cli": [
     "*.json",
@@ -42,13 +44,12 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/less/**/*.less"
+    "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
-    "node": "14.15.0"
+    "node": "8.15"
   },
   "dependencies": {
-    "resolve-url": "^0.2.1",
-    "urix": "^0.1.0"
+    "del": "^4.1.1"
   }
 }
