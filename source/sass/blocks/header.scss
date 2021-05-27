@@ -1,0 +1,236 @@
+.header__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.header__nav {
+  background-image: url('../../img/bike-mob.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 390px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../../img/bike-mob@2x.jpg');
+  }
+
+  @media (min-width: 768px) {
+    min-height: 340px;
+    background-image: url('../../img/bike-tablet.jpg');
+    background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../img/bike-tablet@2x.jpg');
+    }
+  }
+
+  @media (min-width: 1440px) {
+    background-image: url('../../img/bike-desk.jpg');
+    min-height: 825px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../img/bike-desk@2x.jpg');
+    }
+  }
+}
+
+.header__list-item {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.header__logo {
+  margin: 25px 0 0 16px;
+}
+
+.header__btn {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: $background-btn;
+  background-image: url('../../img/burger.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__slogan {
+  display: flex;
+  flex-direction: column;
+  margin: 70px 0 0 0;
+  padding: 0 15px;
+
+  @media (min-width: 768px) {
+    margin: 136px 0 0;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0;
+    max-width: 393px;
+  }
+}
+
+.header__wrapper {
+  margin: -340px 0 0 0;
+
+  @media (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 910px;
+    margin: -507px auto 0;
+  }
+}
+
+.header__slogan-logo {
+  display: none;
+
+  @media (min-width: 1440px) {
+    display: block;
+  }
+}
+
+.header__heading {
+  color: $white;
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: -0.005em;
+
+  @media (min-width: 1440px) {
+    font-size: 46px;
+    line-height: 64px;
+    text-align: left;
+    margin-top: 30px;
+  }
+}
+
+.header__text {
+  margin: 20px 0 0 0;
+  color: $white;
+  opacity: 0.8;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.005em;
+
+  @media (min-width: 768px) {
+    max-width: 435px;
+    margin: 20px auto 0;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: left;
+    margin: 26px 0 0 0;
+  }
+}
+
+.header__list-drop-menu {
+  display: none;
+  flex-direction: column;
+  min-height: 568px;
+  background-color: $white;
+  z-index: 10;
+  min-width: 320px;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  @media (min-width: 1440px) {
+    display: flex;
+    position: relative;
+    max-width: 874px;
+    margin: 0 auto;
+    min-height: auto;
+    background-color: transparent;
+  }
+}
+
+.header__list-drop-menu-close-btn {
+  display: block;
+  cursor: pointer;
+  width: 50px;
+  height: 52px;
+  background-color: $white;
+  background-image: url('../../img/close.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+
+  @media (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.header__drop-menu {
+  margin: 100px 0 0;
+  list-style: none;
+  padding: 0;
+
+  @media (min-width: 1440px) {
+    margin: 0;
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 1px solid rgba($white, 0.2);
+  }
+}
+
+.header__drop-menu-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  background-color: $grey;
+  margin-bottom: 30px;
+  padding: 0 16px;
+  justify-content: space-between;
+
+  @media (min-width: 1440px) {
+    min-height: auto;
+    background-color: transparent;
+    margin: 21px 0 9px;
+  }
+}
+
+.header__drop-menu-item-link {
+  text-decoration: none;
+  color: $link;
+  font-size: 20px;
+  line-height: 140%;
+
+  @media (min-width: 1440px) {
+    color: $white;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    opacity: 0.7;
+  }
+}
+
+.header__drop-menu-item-arrow {
+  @media (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.header__margin {
+  @media (min-width: 1440px) {
+    margin-top: 239px;
+  }
+}
