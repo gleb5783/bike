@@ -46,6 +46,10 @@
 
 .header__logo {
   margin: 25px 0 0 16px;
+
+  @media (min-width: 768px) {
+    margin: 25px 0 0 22px;
+  }
 }
 
 .header__btn {
