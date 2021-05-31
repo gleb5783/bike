@@ -1,15 +1,21 @@
 .form {
   padding: 0 15px;
+  background-color: $white;
 
   @media (min-width: 768px) {
     max-width: 322px;
     width: 100%;
-    margin: 0 auto;
+    margin: 79px auto 0;
     padding: 0;
+    background-color: transparent;
   }
 
-  @media (min-width: 1440px) {
-    margin: 0 14px 0 0;
+  @media (min-width: 890px) {
+    margin: 150px auto 0;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 0;
     max-width: 327px;
     padding: 0;
   }
@@ -24,7 +30,7 @@
 }
 
 .form__legend {
-  padding: 140px 15px 20px;
+  padding: 70px 15px 20px;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -33,15 +39,12 @@
   text-align: center;
   letter-spacing: -0.005em;
 
-  @media (min-width: 408px) {
-    padding: 180px 15px 20px;
-  }
-
   @media (min-width: 768px) {
-    padding: 150px 0 29px;
+    padding: 70px 0 29px;
   }
 
-  @media (min-width: 1440px) {
+
+  @media (min-width: 1024px) {
     padding: 0;
     margin-bottom: 20px;
     font-size: 17px;
@@ -61,8 +64,13 @@
   font-size: 15px;
   line-height: 24px;
   opacity: 0.5;
+  outline: none;
 
-  @media (min-width: 1440px) {
+  &:focus {
+    border: 2px solid $background-btn;
+  }
+
+  @media (min-width: 1024px) {
     opacity: 1;
   }
 }
@@ -88,4 +96,12 @@ input[type="search"]::-moz-placeholder {
   border: none;
   border-radius: 6px;
   background-color: $background-btn;
+
+  &:hover {
+    background-color: $hover;
+  }
+
+  &:active {
+    background-color: $background-btn;
+  }
 }

@@ -11,7 +11,7 @@
     min-height: 550px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1024px) {
     min-height: 1038px;
   }
 }
@@ -29,7 +29,7 @@
     margin: 27px 0 0;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1024px) {
     font-size: 30px;
     line-height: 30px;
     margin: 111px 0 0;
@@ -51,7 +51,7 @@
     margin: 0 25px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1024px) {
     margin: 0;
   }
 }
@@ -81,19 +81,27 @@
 }
 
 .bikes__text-mountains-bike {
-  margin: 15px 0 50px;
+  margin: 15px 0 42px;
 
   @media (min-width: 768px) {
     margin: 15px 0 0;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    margin: 20px 0 30px 0;
+  }
+
+  @media (min-width: 1098px) {
     padding-right: 57px;
   }
 }
 
 .bikes__text-child-bike {
   margin: 16px 0 0;
+
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    margin: 20px 0 30px 0;
+  }
 
   @media (min-width: 1440px) {
     padding: 0 70px 0 0;
@@ -105,7 +113,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('../../img/background-road-bike.svg');
+  background-image: url("../../img/background-road-bike.svg");
   background-repeat: no-repeat;
   background-position: 0 200px;
   padding: 0 0 27px 0;
@@ -115,7 +123,7 @@
     width: 340px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1024px) {
     width: 402px;
     background-size: 180px 180px;
     justify-content: flex-end;
@@ -124,23 +132,52 @@
   }
 }
 
+.bikes__road-bike-img {
+  width: 270px;
+  height: 300px;
+
+  @media (min-width: 1024px) {
+    width: 342px;
+    height: 503px;
+  }
+}
+
 .bikes__mountains-bike-container {
   position: relative;
   width: 320px;
   text-align: center;
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1098px) {
     width: 384px;
     text-align: left;
-    padding: 29px 0 0 0;
+    padding: 0;
     margin: 0 11px 0 0;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 29px 0 0 0;
+  }
+}
+
+.bikes__mountains-bike-img {
+  width: 270px;
+  height: 300px;
+
+  @media (min-width: 1024px) {
+    width: 342px;
+    height: 503px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 342px;
+    height: 566px;
   }
 }
 
 .bikes__background-top {
   display: none;
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1024px) {
     display: block;
     position: absolute;
     top: 11px;
@@ -151,7 +188,7 @@
 .bikes__background-bottom {
   display: none;
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1024px) {
     display: block;
     position: absolute;
     bottom: -18px;
@@ -170,6 +207,16 @@
     width: 402px;
     justify-content: flex-start;
     margin: -8px 6px 0 0;
+  }
+}
+
+.bikes__child-bike-img {
+  width: 270px;
+  height: 300px;
+
+  @media (min-width: 1024px) {
+    width: 342px;
+    height: 513px;
   }
 }
 

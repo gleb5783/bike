@@ -9,13 +9,16 @@
   letter-spacing: -0.005em;
   color: $heading;
   text-align: center;
+  margin: 121px 0 20px;
 
   @media (min-width: 768px) {
     font-size: 24px;
+    margin: 155px 0 20px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1024px) {
     font-size: 30px;
+    margin: 250px 0 28px;
   }
 }
 
@@ -32,9 +35,9 @@
     }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1024px) {
     max-width: 555px;
-    margin: 0 auto;
+    margin: 0 auto 44px;
   }
 }
 
@@ -44,6 +47,15 @@
 
   @media (min-width: 768px) {
     min-height: 545px;
+    padding: 0 35px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 957px;
+    min-height: auto;
+    max-height: 530px;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
@@ -53,5 +65,9 @@
 
   @media (min-width: 768px) {
     min-height: 545px;
+  }
+
+  @media (min-width: 1024px) {
+    min-height: 530px;
   }
 }

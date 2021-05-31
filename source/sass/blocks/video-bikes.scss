@@ -1,0 +1,125 @@
+.bikes-video {
+  background-color: $background-video;
+  padding: 0 18px;
+  min-height: 384px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    min-height: 413px;
+  }
+
+  @media (min-width: 1024px) {
+    min-height: 706px;
+  }
+}
+
+.bikes-video__heading {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  color: $white;
+  padding: 86px 0 20px;
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    padding: 71px 0 20px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 120px 0 20px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.bikes-video__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: rgba($white, 0.7%);
+  margin: 0 0 50px 0;
+
+  @media (min-width: 768px) {
+    padding: 0 160px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 340px;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+.bikes-video__video-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 288px;
+  height: 161px;
+  top: 92%;
+  left: 50%;
+  margin-left: -144px;
+  margin-top: -80px;
+  background-image: url("../../img/video-bike.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/video-bik@2x.jpg");
+  }
+
+  @media (min-width: 768px) {
+    width: 503px;
+    height: 282px;
+    margin-left: -251px;
+    margin-top: 141px;
+    top: 18%;
+    background-image: url("../../img/video-bike-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/video-bike-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: 1024px) {
+    width: 929px;
+    height: 522px;
+    top: 77%;
+    left: 50%;
+    margin-left: -465px;
+    margin-top: -261px;
+    background-image: url("../../img/video-bike-desk.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/video-bike-desk@2x.jpg");
+    }
+  }
+}
+
+.bikes-video__btn {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("../../img/play.svg");
+  background-repeat: no-repeat;
+  border: none;
+
+  &:hover {
+    background-image: url("../../img/play-background.svg");
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    width: 90px;
+    height: 90px;
+    background-size: 90px 90px;
+  }
+}
