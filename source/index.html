@@ -6,13 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Стартовый шаблон</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/open-sans-v20-latin-regular.woff2" as="font">
 </head>
 <body class="body">
   <header class="header">
-    <nav class="header__nav-nojs header__nav">
+    <nav class="header__nav--nojs header__nav">
       <ul class="header__list">
         <li class="header__list-item-close-btn">
-          <button class="header__menu-close-btn"><span class="visually-hidden">Закрыть</span></button>
+          <button class="header__menu-close-btn" type="button"><span class="visually-hidden">Закрыть</span></button>
         </li>
         <li class="header__list-item">
           <a class="header__list-link" href="#about-us">О нас</a>
@@ -35,13 +36,17 @@
     <div class="header__wrapper">
       <ul class="header__list-head">
         <li class="header__list-head-item">
-          <img class="header__logo " src="img/logo.svg" alt="Логотип Moon" width="67" height="20">
-          <button class="header__btn"><span class="visually-hidden">Выпадающее меню</span></button>
+          <a>
+            <img class="header__logo " src="img/logo.svg" alt="Логотип Moon" width="67" height="20">
+          </a>
+          <button class="header__btn" type="button"><span class="visually-hidden">Выпадающее меню</span></button>
         </li>
       </ul>
       <div class="header__bottom-group">
         <div class="header__texts">
-          <img class="header__texts-logo" src="img/logo.svg" alt="Логотип Moon" width="67" height="20">
+          <a>
+            <img class="header__texts-logo" src="img/logo.svg" alt="Логотип Moon" width="67" height="20">
+          </a>
           <h1 class="header__heading">Мы продаем велосипеды</h1>
           <p class="header__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
         </div>
@@ -52,7 +57,7 @@
             <label class="visually-hidden" for="name">Введите ваше имя</label>
             <input class="form__input" type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" autocomplete="off" pattern="[\+7|8]\d{10}">
             <label class="visually-hidden" for="phone">Введите ваш номер телефона</label>
-            <button class="form__btn">Подобрать велосипед мечты</button>
+            <button class="form__btn" type="submit">Подобрать велосипед мечты</button>
           </fieldset>
         </form>
       </div>
@@ -91,7 +96,8 @@
               <source class="bikes__road-bike-img" media="(min-width: 1024px)" type="image/webp" srcset="img/road-bike-desk.webp 1x, img/road-bike-desk@2x.webp 2x">
               <source class="bikes__road-bike-img" type="image/webp" srcset="img/road-bike-mob.webp 1x, img/road-bike-mob@2x.webp 2x">
               <source class="bikes__road-bike-img" media="(min-width: 1024px)" srcset="img/road-bike-desk.png 1x, img/road-bike-desk@2x.png 2x">
-              <img class="bikes__road-bike-img" src="img/road-bike-mob.png" srcset="img/road-bike-mob@2x.png 2x" alt="Дорожные велосипеды" width="270" height="300">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="bikes__road-bike-img" src="img/road-bike-mob.png" srcset="img/road-bike-mob.png 1x, img/road-bike-mob@2x.png 2x" alt="Дорожные велосипеды" width="270" height="300">
             </picture>
           </div>
           <p class="bikes__text bikes__text-road-bike">Дорожный велосипед</p>
@@ -106,7 +112,8 @@
               <source class="bikes__mountains-bike-img" type="image/webp" srcset="img/mountains-bike-mob.webp 1x, img/mountains-bike-mob@2x.webp 2x">
               <source class="bikes__mountains-bike-img" media="(min-width: 1440px)" srcset="img/mountains-bike-desk.png 1x, img/mountains-bike-desk@2x.png 2x">
               <source class="bikes__mountains-bike-img" media="(min-width: 1024px)" srcset="img/mountains-bike-desk.png 1x, img/mountains-bike-desk@2x.png 2x">
-              <img class="bikes__mountains-bike-img" src="img/mountains-bike-mob.png" srcset="img/mountains-bike-mob@2x.png 2x" alt="Горные велосипеды" width="270" height="300">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="bikes__mountains-bike-img" src="img/mountains-bike-mob.png" srcset="img/mountains-bike-mob.png 1x, img/mountains-bike-mob@2x.png 2x" alt="Горные велосипеды" width="270" height="300">
             </picture>
           </div>
           <p class="bikes__text bikes__text-mountains-bike">Горный велосипед</p>
@@ -118,7 +125,8 @@
               <source class="bikes__child-bike-img" media="(min-width: 1024px)" type="image/webp" srcset="img/child-bike-desk.webp 1x, img/child-bike-desk@2x.webp 2x">
               <source class="bikes__child-bike-img" type="image/webp" srcset="img/child-bike-mob.webp 1x, img/child-bike-mob@2x.webp 2x">
               <source class="bikes__child-bike-img" media="(min-width: 1024px)" srcset="img/child-bike-desk.png 1x, img/child-bike-desk@2x.png 2x">
-              <img class="bikes__child-bike-img" src="img/child-bike-mob.png" srcset="img/child-bike-mob@2x.png 2x" alt="Детские велосипеды" width="270" height="300">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="bikes__child-bike-img" src="img/child-bike-mob.png" srcset="img/child-bike-mob.png 1x, img/child-bike-mob@2x.png 2x" alt="Детские велосипеды" width="270" height="300">
             </picture>
           </div>
           <p class="bikes__text bikes__text-child-bike">Детский велосипед</p>
@@ -129,7 +137,7 @@
       <h2 class="bikes-video__heading">Видео про велосипеды</h2>
       <p class="bikes-video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
       <div class="bikes-video__video-wrapper">
-        <button class="bikes-video__btn">
+        <button class="bikes-video__btn" type="button">
           <span class="visually-hidden">Воспроизвести видео</span>
         </button>
       </div>

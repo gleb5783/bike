@@ -135,6 +135,8 @@
 .bikes__road-bike-img {
   width: 270px;
   height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
 
   @media (min-width: 1024px) {
     width: 342px;
@@ -160,6 +162,8 @@
 }
 
 .bikes__mountains-bike-img {
+  object-fit: cover;
+  border-radius: 10px;
   width: 270px;
   height: 300px;
 
@@ -211,6 +215,8 @@
 }
 
 .bikes__child-bike-img {
+  object-fit: cover;
+  border-radius: 10px;
   width: 270px;
   height: 300px;
 

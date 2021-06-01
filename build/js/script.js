@@ -1,13 +1,17 @@
-const openMenuBtn = document.querySelector('.header__btn');
-const menu = document.querySelector('.header__nav');
-const closeMenuBtn = document.querySelector('.header__menu-close-btn');
+'use strict';
 
-menu.classList.remove('header__nav-nojs');
+var openMenuBtn = document.querySelector('.header__btn');
+var menu = document.querySelector('.header__nav');
+var closeMenuBtn = document.querySelector('.header__menu-close-btn');
 
-openMenuBtn.addEventListener('click', () => {
+function openMenu() {
   menu.classList.add('header__menu--active');
-});
+}
 
-closeMenuBtn.addEventListener('click', () => {
+function closeMenu() {
   menu.classList.remove('header__menu--active');
-});
+}
+
+menu.classList.remove('header__nav--nojs');
+closeMenuBtn.addEventListener('click', closeMenu);
+openMenuBtn.addEventListener('click', openMenu);
