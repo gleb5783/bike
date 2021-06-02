@@ -65,6 +65,7 @@
   line-height: 24px;
   opacity: 0.5;
   outline: none;
+  color: $input-text;
 
   &:focus {
     border: 2px solid $background-btn;
@@ -73,14 +74,6 @@
   @media (min-width: 1024px) {
     opacity: 1;
   }
-}
-
-input[type="search"]::-webkit-input-placeholder {
-  color: $input-text;
-}
-
-input[type="search"]::-moz-placeholder {
-  color: $input-text;
 }
 
 .form__btn {
