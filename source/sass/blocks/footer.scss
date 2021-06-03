@@ -23,10 +23,9 @@
   }
 }
 
-.footer__mail {
+.footer__link {
   position: relative;
   display: block;
-  margin: 31px 0 22px 71px;
   font-size: 16px;
   line-height: 22px;
   text-decoration: none;
@@ -39,6 +38,10 @@
   &:active {
     color: $background-btn;
   }
+}
+
+.footer__menu--email {
+  margin: 31px 0 22px 71px;
 
   @media (min-width: 330px) {
     margin: 31px 0 22px;
@@ -65,22 +68,8 @@
   }
 }
 
-.footer__phone {
-  position: relative;
-  display: block;
+.footer__menu--phone {
   margin: 0 0 0 96px;
-  font-size: 16px;
-  line-height: 22px;
-  text-decoration: none;
-  color: rgba($black, 0.5%);
-
-  &:hover {
-    color: $hover;
-  }
-
-  &:active {
-    color: $background-btn;
-  }
 
   @media (min-width: 330px) {
     margin: 0;

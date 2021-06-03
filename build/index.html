@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/open-sans-v20-latin-regular.woff2" as="font">
 </head>
-<body class="body body--noscroll">
+<body class="body">
 
   <svg style="display: none;">
 
@@ -21,14 +21,6 @@
         <rect width="12" height="7.4" fill="white" transform="translate(9 18) rotate(-90)"></rect>
         </clipPath>
         </defs>
-    </symbol>
-
-    <symbol id="background-child-bike" viewBox="0 0 68 68">
-      <circle cx="34" cy="34" r="27.5" stroke="#0AD9C6" fill="transparent" stroke-width="13"></circle>
-    </symbol>
-
-    <symbol id="background-mountains-bike" viewBox="0 0 47 47">
-      <rect x="4" y="4" width="39" height="39" stroke="#0AD9C6" fill="transparent" stroke-width="8"></rect>
     </symbol>
 
     <symbol id="logo" viewBox="0 0 68 21">
@@ -52,7 +44,7 @@
               <use xlink:href="#logo"></use>
             </svg>
           </a>
-          <button id="tg" class="header__menu-close-button header__menu-open-button" type="button">
+          <button id="open-menu" class="header__menu-close-button header__menu-open-button" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="header__list-drop-menu header__list-drop-menu--nojs">
@@ -126,51 +118,36 @@
     </section>
     <section class="bikes" id="bikes">
       <h2 class="bikes__heading">Виды велосипедов</h2>
-      <div class="bikes__flex-box">
-        <div class="bikes__wrapper">
-          <div class="bikes__road-bike-container">
-            <picture>
-              <source media="(min-width: 1024px)" type="image/webp" srcset="img/road-bike-desk.webp 1x, img/road-bike-desk@2x.webp 2x">
-              <source type="image/webp" srcset="img/road-bike-mob.webp 1x, img/road-bike-mob@2x.webp 2x">
-              <!-- 1х: 270px; 2x: 540px -->
-              <img class="bikes__road-bike-img" src="img/road-bike-mob.png" srcset="img/road-bike-mob.png 1x, img/road-bike-mob@2x.png 2x" alt="Дорожные велосипеды" width="270" height="300">
-            </picture>
-          </div>
-          <p class="bikes__text bikes__text-road-bike">Дорожный велосипед</p>
-        </div>
-        <div class="bikes__wrapper">
-          <div class="bikes__mountains-bike-container">
-            <svg class="bikes__background-top" width="47" height="47">
-              <use xlink:href="#background-mountains-bike"></use>
-            </svg>
-            <svg class="bikes__background-bottom" width="47" height="47">
-              <use xlink:href="#background-mountains-bike"></use>
-            </svg>
-            <picture>
-              <source media="(min-width: 1440px)" type="image/webp" srcset="img/mountains-bike-desk.webp 1x, img/mountains-bike-desk@2x.webp 2x">
-              <source media="(min-width: 1024px)" type="image/webp" srcset="img/mountains-bike-desk.webp 1x, img/mountains-bike-desk@2x.webp 2x">
-              <source type="image/webp" srcset="img/mountains-bike-mob.webp 1x, img/mountains-bike-mob@2x.webp 2x">
-              <!-- 1х: 270px; 2x: 540px -->
-              <img class="bikes__mountains-bike-img" src="img/mountains-bike-mob.png" srcset="img/mountains-bike-mob.png 1x, img/mountains-bike-mob@2x.png 2x" alt="Горные велосипеды" width="270" height="300">
-            </picture>
-          </div>
-          <p class="bikes__text bikes__text-mountains-bike">Горный велосипед</p>
-        </div>
-        <div class="bikes__wrapper">
-          <div class="bikes__child-bike-container">
-            <svg class="bikes__child-bike-background" width="68" height="68">
-              <use xlink:href="#background-child-bike"></use>
-            </svg>
-            <picture>
-              <source media="(min-width: 1024px)" type="image/webp" srcset="img/child-bike-desk.webp 1x, img/child-bike-desk@2x.webp 2x">
-              <source type="image/webp" srcset="img/child-bike-mob.webp 1x, img/child-bike-mob@2x.webp 2x">
-              <!-- 1х: 270px; 2x: 540px -->
-              <img class="bikes__child-bike-img" src="img/child-bike-mob.png" srcset="img/child-bike-mob.png 1x, img/child-bike-mob@2x.png 2x" alt="Детские велосипеды" width="270" height="300">
-            </picture>
-          </div>
-          <p class="bikes__text bikes__text-child-bike">Детский велосипед</p>
-        </div>
-      </div>
+      <ul class="bikes__list">
+        <li class="bikes__list-item bikes__list-item-road">
+          <picture>
+            <source media="(min-width: 1024px)" type="image/webp" srcset="img/road-bike-desk.webp 1x, img/road-bike-desk@2x.webp 2x">
+            <source type="image/webp" srcset="img/road-bike-mob.webp 1x, img/road-bike-mob@2x.webp 2x">
+            <!-- 1х: 270px; 2x: 540px -->
+            <img class="bikes__road-bike-img" src="img/road-bike-mob.png" srcset="img/road-bike-mob.png 1x, img/road-bike-mob@2x.png 2x" alt="Дорожные велосипеды" width="270" height="300">
+          </picture>
+          <p class="bikes__text">Дорожный велосипед</p>
+        </li>
+        <li class="bikes__list-item bikes__list-item-mountains">
+          <picture>
+            <source media="(min-width: 1440px)" type="image/webp" srcset="img/mountains-bike-desk.webp 1x, img/mountains-bike-desk@2x.webp 2x">
+            <source media="(min-width: 1024px)" type="image/webp" srcset="img/mountains-bike-desk.webp 1x, img/mountains-bike-desk@2x.webp 2x">
+            <source type="image/webp" srcset="img/mountains-bike-mob.webp 1x, img/mountains-bike-mob@2x.webp 2x">
+            <!-- 1х: 270px; 2x: 540px -->
+            <img class="bikes__mountains-bike-img" src="img/mountains-bike-mob.png" srcset="img/mountains-bike-mob.png 1x, img/mountains-bike-mob@2x.png 2x" alt="Горные велосипеды" width="270" height="300">
+          </picture>
+          <p class="bikes__text">Горный велосипед</p>
+        </li>
+        <li class="bikes__list-item bikes__list-item-child">
+          <picture>
+            <source media="(min-width: 1024px)" type="image/webp" srcset="img/child-bike-desk.webp 1x, img/child-bike-desk@2x.webp 2x">
+            <source type="image/webp" srcset="img/child-bike-mob.webp 1x, img/child-bike-mob@2x.webp 2x">
+            <!-- 1х: 270px; 2x: 540px -->
+            <img class="bikes__child-bike-img" src="img/child-bike-mob.png" srcset="img/child-bike-mob.png 1x, img/child-bike-mob@2x.png 2x" alt="Детские велосипеды" width="270" height="300">
+          </picture>
+          <p class="bikes__text">Детский велосипед</p>
+        </li>
+      </ul>
     </section>
     <section class="bikes-video" id="bikes-video">
       <h2 class="bikes-video__heading">Видео про велосипеды</h2>
@@ -190,8 +167,8 @@
     </section>
   </main>
   <footer class="footer">
-    <a class="footer__mail" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-    <a class="footer__phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
+    <a class="footer__link footer__menu--email" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+    <a class="footer__link footer__menu--phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
   </footer>
   <script src="js/script.js" type="module"></script>
 </body>
