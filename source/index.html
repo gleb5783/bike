@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
+  <title>Велосипеды</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/open-sans-v20-latin-regular.woff2" as="font">
 </head>
-<body class="body">
+<body class="body body--noscroll">
 
   <svg style="display: none;">
 
@@ -31,10 +31,6 @@
       <rect x="4" y="4" width="39" height="39" stroke="#0AD9C6" fill="transparent" stroke-width="8"/>
     </symbol>
 
-    <symbol id="four" viewBox="0 0 30 22">
-      <path d="M14.1246 11.0059C14.1246 14.4967 13.5504 17.0807 12.402 18.7578C11.2627 20.4349 9.50356 21.2734 7.12465 21.2734C4.81866 21.2734 3.07777 20.4076 1.90199 18.6758C0.735326 16.944 0.151993 14.3874 0.151993 11.0059C0.151993 7.47852 0.721654 4.88086 1.86098 3.21289C3.0003 1.53581 4.75486 0.697266 7.12465 0.697266C9.43064 0.697266 11.1715 1.57227 12.3473 3.32227C13.5322 5.07227 14.1246 7.63346 14.1246 11.0059ZM4.34926 11.0059C4.34926 13.4577 4.55889 15.2168 4.97816 16.2832C5.40655 17.3405 6.12204 17.8691 7.12465 17.8691C8.10902 17.8691 8.81996 17.3314 9.25746 16.2559C9.69496 15.1803 9.91371 13.4303 9.91371 11.0059C9.91371 8.55404 9.6904 6.79492 9.24379 5.72852C8.80629 4.65299 8.09991 4.11523 7.12465 4.11523C6.13116 4.11523 5.42022 4.65299 4.99184 5.72852C4.56345 6.79492 4.34926 8.55404 4.34926 11.0059ZM29.4086 16.8574H27.0023V21H22.8734V16.8574H14.3422V13.918L23.1058 1.01172H27.0023V13.5762H29.4086V16.8574ZM22.8734 13.5762V10.1855C22.8734 9.62044 22.8962 8.80013 22.9418 7.72461C22.9873 6.64909 23.0238 6.02474 23.0511 5.85156H22.9418C22.6045 6.59896 22.1989 7.32812 21.725 8.03906L18.0609 13.5762H22.8734Z" fill="#0AD9C6"/>
-    </symbol>
-
     <symbol id="logo" viewBox="0 0 68 21">
       <path d="M13.3636 0V20.0455H10.0705V5.82273L8.97273 7.20682L6.825 9.975L6.72954 10.0705L6.58636 9.975L4.43864 7.20682L3.34091 5.775V20.0455H0V0H3.34091L6.72954 4.29545L10.0705 0H13.3636Z" fill="#0AD9C6"/>
       <path d="M8.30444 10.0704L8.20898 9.97498L8.30444 10.0704Z" fill="#0AD9C6"/>
@@ -45,125 +41,88 @@
       <path d="M67.5977 0.238647V20.2841H64.2568V9.87956L61.4409 7.20683L59.3409 5.15456V20.2841H56V0.238647H59.2932H59.3409L63.2545 4.0091L64.2568 4.96365V0.238647H67.5977Z" fill="#0AD9C6"/>
       <rect x="37" y="3" width="6" height="4" fill="#0AD9C6"/>
     </symbol>
-
-    <symbol id="mail" viewBox="0 0 26 20">
-      <path d="M24.2273 0H1.77273C0.768182 0 0 0.764706 0 1.76471V18.2353C0 19.2353 0.768182 20 1.77273 20H24.2273C25.2318 20 26 19.2353 26 18.2353V1.76471C26 0.764706 25.2318 0 24.2273 0ZM24.2273 17L19.5591 12.3529C19.2045 12 18.6727 12 18.3182 12.3529C17.9636 12.7059 17.9636 13.2353 18.3182 13.5882L22.9864 18.2353H3.01362L7.68182 13.5882C8.03636 13.2353 8.03636 12.7059 7.68182 12.3529C7.32727 12 6.79547 12 6.44092 12.3529L1.77273 17V5.70585L12.4091 13.7059C12.5864 13.8236 12.7636 13.8823 12.9409 13.8823C13.1182 13.8823 13.2954 13.8236 13.4727 13.7059L24.2273 5.70585V17ZM24.2273 1.76471V3.4706L12.9409 11.8235L1.77273 3.4706V1.76471H24.2273Z" fill="#0AD9C6"/>
-    </symbol>
-
-    <symbol id="one" viewBox="0 0 26 22">
-      <path d="M14.1246 11.0059C14.1246 14.4967 13.5504 17.0807 12.402 18.7578C11.2627 20.4349 9.50356 21.2734 7.12465 21.2734C4.81866 21.2734 3.07777 20.4076 1.90199 18.6758C0.735326 16.944 0.151993 14.3874 0.151993 11.0059C0.151993 7.47852 0.721654 4.88086 1.86098 3.21289C3.0003 1.53581 4.75486 0.697266 7.12465 0.697266C9.43064 0.697266 11.1715 1.57227 12.3473 3.32227C13.5322 5.07227 14.1246 7.63346 14.1246 11.0059ZM4.34926 11.0059C4.34926 13.4577 4.55889 15.2168 4.97816 16.2832C5.40655 17.3405 6.12204 17.8691 7.12465 17.8691C8.10902 17.8691 8.81996 17.3314 9.25746 16.2559C9.69496 15.1803 9.91371 13.4303 9.91371 11.0059C9.91371 8.55404 9.6904 6.79492 9.24379 5.72852C8.80629 4.65299 8.09991 4.11523 7.12465 4.11523C6.13116 4.11523 5.42022 4.65299 4.99184 5.72852C4.56345 6.79492 4.34926 8.55404 4.34926 11.0059ZM25.4301 21H21.2054V9.43359L21.2465 7.5332L21.3148 5.45508C20.613 6.1569 20.1254 6.61719 19.8519 6.83594L17.5551 8.68164L15.5179 6.13867L21.9574 1.01172H25.4301V21Z" fill="#0AD9C6"/>
-    </symbol>
-
-    <symbol id="phone" viewBox="0 0 22 24">
-      <path d="M3.45641 6.62432C3.37185 5.42623 3.63759 4.24606 4.3412 3.29684C4.9512 2.43632 5.74541 1.96636 6.70269 1.69172C7.50898 1.4525 8.03745 1.74561 8.26998 2.64204C8.60217 3.98224 9.07628 5.3225 9.24841 6.73361C9.30277 7.35485 8.90114 8.23322 8.46629 8.6856C7.37614 9.75888 7.60263 10.5399 8.43006 12.1643C8.68675 12.6881 9.09442 13.5934 9.88864 14.7919C10.7161 15.9992 11.1539 16.6472 12.2169 16.0975C13.3977 15.5035 14.2583 15.8855 15.1492 16.8444C15.7531 17.5369 16.4175 18.1318 17.0215 18.8243C17.8942 19.8542 17.8549 20.5641 17.1725 21.2915C15.9434 22.6309 13.9141 23.0736 12.4042 22.1766C11.5707 21.6881 10.7402 21.0487 10.0789 20.303C7.16477 16.9825 5.06297 13.1212 3.79765 8.76321C3.59532 8.02654 3.50171 7.28104 3.45641 6.62432Z" stroke="#0AD9C6" stroke-width="2" stroke-miterlimit="10"/>
-    </symbol>
-
-    <symbol id="three" viewBox="0 0 29 22">
-      <path d="M14.1246 11.0059C14.1246 14.4967 13.5504 17.0807 12.402 18.7578C11.2627 20.4349 9.50356 21.2734 7.12465 21.2734C4.81866 21.2734 3.07777 20.4076 1.90199 18.6758C0.735326 16.944 0.151993 14.3874 0.151993 11.0059C0.151993 7.47852 0.721654 4.88086 1.86098 3.21289C3.0003 1.53581 4.75486 0.697266 7.12465 0.697266C9.43064 0.697266 11.1715 1.57227 12.3473 3.32227C13.5322 5.07227 14.1246 7.63346 14.1246 11.0059ZM4.34926 11.0059C4.34926 13.4577 4.55889 15.2168 4.97816 16.2832C5.40655 17.3405 6.12204 17.8691 7.12465 17.8691C8.10902 17.8691 8.81996 17.3314 9.25746 16.2559C9.69496 15.1803 9.91371 13.4303 9.91371 11.0059C9.91371 8.55404 9.6904 6.79492 9.24379 5.72852C8.80629 4.65299 8.09991 4.11523 7.12465 4.11523C6.13116 4.11523 5.42022 4.65299 4.99184 5.72852C4.56345 6.79492 4.34926 8.55404 4.34926 11.0059ZM28.1781 5.48242C28.1781 6.73112 27.7998 7.79297 27.0433 8.66797C26.2868 9.54297 25.225 10.1445 23.8578 10.4727V10.5547C25.4711 10.7552 26.6924 11.2474 27.5219 12.0312C28.3513 12.806 28.766 13.8542 28.766 15.1758C28.766 17.099 28.0687 18.5983 26.6742 19.6738C25.2797 20.7402 23.2881 21.2734 20.6996 21.2734C18.5303 21.2734 16.6071 20.9134 14.9301 20.1934V16.5977C15.7048 16.9896 16.557 17.3086 17.4867 17.5547C18.4164 17.8008 19.337 17.9238 20.2484 17.9238C21.6429 17.9238 22.6729 17.6868 23.3383 17.2129C24.0036 16.7389 24.3363 15.9779 24.3363 14.9297C24.3363 13.9909 23.9535 13.3255 23.1879 12.9336C22.4222 12.5417 21.2009 12.3457 19.5238 12.3457H18.0062V9.10547H19.5511C21.1006 9.10547 22.2308 8.90495 22.9418 8.50391C23.6618 8.09375 24.0219 7.39648 24.0219 6.41211C24.0219 4.89909 23.0739 4.14258 21.1781 4.14258C20.5219 4.14258 19.8519 4.25195 19.1683 4.4707C18.4939 4.68945 17.7419 5.06771 16.9125 5.60547L14.9574 2.69336C16.7803 1.38086 18.9541 0.724609 21.4789 0.724609C23.5479 0.724609 25.1794 1.14388 26.3734 1.98242C27.5765 2.82096 28.1781 3.98763 28.1781 5.48242Z" fill="#0AD9C6"/>
-    </symbol>
-
-    <symbol id="two" viewBox="0 0 29 22">
-      <path d="M14.1246 11.0059C14.1246 14.4967 13.5504 17.0807 12.402 18.7578C11.2627 20.4349 9.50356 21.2734 7.12465 21.2734C4.81866 21.2734 3.07777 20.4076 1.90199 18.6758C0.735326 16.944 0.151993 14.3874 0.151993 11.0059C0.151993 7.47852 0.721654 4.88086 1.86098 3.21289C3.0003 1.53581 4.75486 0.697266 7.12465 0.697266C9.43064 0.697266 11.1715 1.57227 12.3473 3.32227C13.5322 5.07227 14.1246 7.63346 14.1246 11.0059ZM4.34926 11.0059C4.34926 13.4577 4.55889 15.2168 4.97816 16.2832C5.40655 17.3405 6.12204 17.8691 7.12465 17.8691C8.10902 17.8691 8.81996 17.3314 9.25746 16.2559C9.69496 15.1803 9.91371 13.4303 9.91371 11.0059C9.91371 8.55404 9.6904 6.79492 9.24379 5.72852C8.80629 4.65299 8.09991 4.11523 7.12465 4.11523C6.13116 4.11523 5.42022 4.65299 4.99184 5.72852C4.56345 6.79492 4.34926 8.55404 4.34926 11.0059ZM28.9574 21H14.9847V18.0605L20.0023 12.9883C21.488 11.4661 22.4587 10.4134 22.9144 9.83008C23.3702 9.23763 23.6983 8.69076 23.8988 8.18945C24.0993 7.68815 24.1996 7.16862 24.1996 6.63086C24.1996 5.82878 23.9763 5.23177 23.5297 4.83984C23.0922 4.44792 22.5043 4.25195 21.766 4.25195C20.9913 4.25195 20.2393 4.42969 19.5101 4.78516C18.781 5.14062 18.0199 5.64648 17.2269 6.30273L14.9301 3.58203C15.9144 2.74349 16.7302 2.15104 17.3773 1.80469C18.0245 1.45833 18.7308 1.19401 19.4965 1.01172C20.2621 0.820312 21.1189 0.724609 22.0668 0.724609C23.3155 0.724609 24.4183 0.952474 25.3754 1.4082C26.3324 1.86393 27.0752 2.50195 27.6039 3.32227C28.1325 4.14258 28.3969 5.08138 28.3969 6.13867C28.3969 7.05924 28.2328 7.92513 27.9047 8.73633C27.5857 9.53841 27.0844 10.3633 26.4008 11.2109C25.7263 12.0586 24.5323 13.2663 22.8187 14.834L20.2484 17.2539V17.4453H28.9574V21Z" fill="#0AD9C6"/>
-    </symbol>
   </svg>
 
   <header class="header">
-    <nav class="header__nav--nojs header__nav">
+    <nav class="header__main-nav">
       <ul class="header__list">
-        <li class="header__list-item-close-btn">
-          <button class="header__menu-close-btn" type="button"><span class="visually-hidden">Закрыть</span></button>
-        </li>
         <li class="header__list-item">
-          <a class="header__list-link" href="#about-us">О нас</a>
-          <svg class="header__list-arrow" width="25" height="25">
-            <use xlink:href="#arrow"></use>
-          </svg>
-        </li>
-        <li class="header__list-item">
-          <a class="header__list-link" href="#bikes">Виды велосипедов</a>
-          <svg class="header__list-arrow" width="25" height="25">
-            <use xlink:href="#arrow"></use>
-          </svg>
-        </li>
-        <li class="header__list-item">
-          <a class="header__list-link" href="#bikes-video">Видео про велосипеды</a>
-          <svg class="header__list-arrow" width="25" height="25">
-            <use xlink:href="#arrow"></use>
-          </svg>
-        </li>
-        <li class="header__list-item">
-          <a class="header__list-link" href="#map">Контакты</a>
-          <svg class="header__list-arrow" width="25" height="25">
-            <use xlink:href="#arrow"></use>
-          </svg>
+          <a>
+            <svg class="header__logo" width="68" height="21">
+              <use xlink:href="#logo"></use>
+            </svg>
+          </a>
+          <button id="tg" class="header__menu-close-button header__menu-open-button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="header__list-drop-menu header__list-drop-menu--nojs">
+            <li class="header__list-drop-menu-item">
+              <a href="#about-us">О нас</a>
+            </li>
+            <li class="header__list-drop-menu-item">
+              <a href="#bikes">Виды велосипедов</a>
+            </li>
+            <li class="header__list-drop-menu-item">
+              <a href="#bikes-video">Видео про велосипеды</a>
+            </li>
+            <li class="header__list-drop-menu-item">
+              <a href="#map">Контакты</a>
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>
-    <div class="header__wrapper">
-      <ul class="header__list-head">
-        <li class="header__list-head-item">
-          <a>
-            <svg class="header__logo" width="67" height="20">
-              <use xlink:href="#logo"></use>
-            </svg>
-          </a>
-          <button class="header__btn" type="button"><span class="visually-hidden">Выпадающее меню</span></button>
-        </li>
-      </ul>
-      <div class="header__bottom-group">
-        <div class="header__texts">
-          <a>
-            <svg class="header__texts-logo" width="67" height="20">
-              <use xlink:href="#logo"></use>
-            </svg>
-          </a>
-          <h1 class="header__heading">Мы продаем велосипеды</h1>
-          <p class="header__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-        </div>
-        <form class="form" method="GET" action="#" id="main-form">
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Заполните поля ниже и мы подберем велосипед Вашей мечты</legend>
-            <input class="form__input" type="text" name="name" id="name" placeholder="Введите Ваше Имя" autocomplete="off">
-            <label class="visually-hidden" for="name">Введите ваше имя</label>
-            <input class="form__input" type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" autocomplete="off" pattern="[\+7|8]\d{10}">
-            <label class="visually-hidden" for="phone">Введите ваш номер телефона</label>
-            <button class="form__btn" type="submit">Подобрать велосипед мечты</button>
+  </header>
+  <main>
+    <section class="main-banner main-banner--nojs">
+      <div class="main-banner__info">
+        <a class="header__logo-link">
+          <svg class="main-banner__logo" width="67" height="20">
+            <use xlink:href="#logo"></use>
+          </svg>
+        </a>
+        <h1 class="main-banner__info-heading">Мы продаем велосипеды</h1>
+        <p class="main-banner__info-text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+      </div>
+      <div class="main-banner__form">
+        <form method="GET" action="#" id="main-form">
+          <fieldset>
+            <legend>Заполните поля ниже и мы подберем велосипед Вашей мечты</legend>
+            <div class="main-banner__form-input">
+              <input type="text" name="name" id="name" placeholder="Введите Ваше Имя" required>
+              <label class="visually-hidden" for="name">Введите ваше имя</label>
+            </div>
+            <div class="main-banner__form-input">
+              <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" pattern="[\+7|8]\d{10}" required>
+              <label class="visually-hidden" for="phone">Введите ваш номер телефона</label>
+            </div>
+            <button class="main-banner__form-button" type="submit">Подобрать велосипед мечты</button>
           </fieldset>
         </form>
       </div>
-    </div>
-  </header>
-  <main>
+    </section>
     <section class="about-us" id="about-us">
       <h2 class="about-us__heading">
         Несколько фактов о нас
       </h2>
-      <div class="about-us__flex-box">
-        <div class="about-us__wrapper">
-          <svg width="26" height="22">
-            <use xlink:href="#one"></use>
-          </svg>
+      <ul class="about-us__list">
+        <li class="about-us__list-item">
+          <p class="about-us__text-number">01</p>
           <p class="about-us__text">Самый широкий выбор велосипедов!</p>
-        </div>
-        <div class="about-us__wrapper">
-          <svg width="26" height="22">
-            <use xlink:href="#two"></use>
-          </svg>
-          <p class="about-us__text">Доставка велосипедов<br> по всей России!</p>
-        </div>
-        <div class="about-us__wrapper">
-          <svg width="26" height="22">
-            <use xlink:href="#three"></use>
-          </svg>
+        </li>
+        <li class="about-us__list-item">
+          <p class="about-us__text-number">02</p>
+          <p class="about-us__text">Доставка велосипедов по всей России!</p>
+        </li>
+        <li class="about-us__list-item">
+          <p class="about-us__text-number">03</p>
           <p class="about-us__text">Большой выбор крутых аксессуаров!</p>
-        </div>
-        <div class="about-us__wrapper">
-          <svg width="26" height="22">
-            <use xlink:href="#four"></use>
-          </svg>
+        </li>
+        <li class="about-us__list-item">
+          <p class="about-us__text-number">04</p>
           <p class="about-us__text">Профессиональные консультации!</p>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
     <section class="bikes" id="bikes">
       <h2 class="bikes__heading">Виды велосипедов</h2>
@@ -232,8 +191,8 @@
   </main>
   <footer class="footer">
     <a class="footer__mail" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-    <a class="footer__phone" href="tel:+7(499)-784-684-46">+7 (499) -784-684-46</a>
+    <a class="footer__phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.js" type="module"></script>
 </body>
 </html>

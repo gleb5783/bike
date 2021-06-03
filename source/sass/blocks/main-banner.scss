@@ -1,0 +1,233 @@
+.main-banner {
+  position: relative;
+}
+
+.main-banner--nojs {
+  margin: 568px 0 0 0;
+
+  @media (min-width: 1024px) {
+    margin: 0;
+  }
+}
+
+.main-banner__info {
+  background-image: url("../../img/bike-mob.jpg");
+  background-repeat: no-repeat;
+  min-height: 390px;
+  background-size: cover;
+  background-position: center;
+  background-color: $background-main-banner;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/bike-mob@2x.jpg");
+  }
+
+  @media (min-width: 768px) {
+    min-height: 340px;
+    background-image: url("../../img/bike-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/bike-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: 1024px) {
+    min-height: 825px;
+    background-image: url("../../img/bike-desk.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/bike-desk@2x.jpg");
+    }
+  }
+}
+
+.header__logo-link {
+  @media (min-width: 1024px) {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 318px 0 0 8%;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0 0 0 12%;
+  }
+
+  @media (min-width: 1920px) {
+    margin: 0 0 0 19%;
+  }
+}
+
+.main-banner__logo {
+  display: none;
+
+  @media (min-width: 1024px) {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.main-banner__info-heading {
+  margin: 0;
+  padding: 120px 0 0 0;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: $white;
+
+  @media (min-width: 768px) {
+    padding: 137px 0 0 0;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 46px;
+    line-height: 64px;
+    text-align: left;
+    max-width: 393px;
+    padding: 0;
+    margin: 30px 0 24px 8%;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 30px 0 24px 20%;
+  }
+
+  @media (min-width: 1920px) {
+    margin: 30px 0 24px 27%;
+  }
+}
+
+.main-banner__info-text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: rgba($white, 0.8%);
+  padding: 0 16px;
+
+  @media (min-width: 768px) {
+    padding: 0 166px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 20px;
+    max-width: 393px;
+    text-align: left;
+    margin: 0 0 0 8%;
+    padding: 0;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0 0 0 20%;
+  }
+
+  @media (min-width: 1920px) {
+    margin: 0 0 0 27%;
+  }
+}
+
+.main-banner__form {
+  background-color: $white;
+  padding: 0 16px;
+
+  @media (min-width: 768px) {
+    padding: 0 224px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1024px) {
+    position: absolute;
+    top: 325px;
+    padding: 0;
+    margin: 0;
+    right: 24%;
+    margin-right: -164px;
+    width: 328px;
+    background-color: transparent;
+  }
+
+  @media (min-width: 1440px) {
+    right: 31%;
+  }
+}
+
+.main-banner__form fieldset {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.main-banner__form legend {
+  padding: 70px 15px 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: $black;
+  text-align: center;
+  letter-spacing: -0.005em;
+
+  @media (min-width: 768px) {
+    padding: 70px 0 31px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0 0 17px 0;
+    color: $white;
+    font-size: 17px;
+  }
+}
+
+.main-banner__form-input input {
+  margin: 0 0 20px 0;
+  border-radius: 6px;
+  border: 1px solid $input-border;
+  min-height: 48px;
+  padding-left: 26px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  width: 100%;
+  opacity: 0.5;
+  outline: none;
+  color: $input-text;
+
+  &:hover {
+    border: 2px solid $background-btn;
+  }
+
+  &:focus {
+    border: 2px solid $background-btn;
+  }
+
+  @media (min-width: 1024px) {
+    opacity: 1;
+  }
+}
+
+.main-banner__form-button {
+  display: block;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  min-height: 50px;
+  padding: 0;
+  border: none;
+  border-radius: 6px;
+  background-color: $background-btn;
+
+  &:hover {
+    background-color: $hover;
+  }
+
+  &:active {
+    background-color: $background-btn;
+  }
+}

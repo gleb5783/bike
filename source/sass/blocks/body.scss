@@ -1,0 +1,11 @@
+.body {
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.body--noscroll {
+  overflow: hidden;
+}
