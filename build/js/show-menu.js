@@ -17,7 +17,14 @@ function isEscEvent(evt) {
 function closeEscMenu(evt) {
   if (isEscEvent(evt) && mainBanner.classList.value === 'main-banner main-banner--nojs') {
     openMenu();
-    document.removeEventListener('keydown', closeEscMenu);
+    document.removeEventListener('click', closeClickMenu);
+  }
+}
+
+function closeClickMenu(evt) {
+  if(evt.target.classList.value === '' || evt.target.classList.value === 'main-banner__info-heading' || evt.target.classList.value === 'main-banner__info' || evt.target.classList.value === 'main-banner__info-text' || evt.target.classList.value === 'main-banner__form') {
+    openMenu();
+    document.removeEventListener('click', closeClickMenu);
   }
 }
 
@@ -25,8 +32,12 @@ function openMenu() {
   openMenuBtn.classList.toggle('header__menu-close-button');
   mainBanner.classList.toggle('main-banner--nojs');
   menu.classList.toggle('header__list-drop-menu--nojs');
-  document.addEventListener('keydown', closeEscMenu);
   document.body.classList.toggle('body--noscroll');
+  document.addEventListener('keydown', closeEscMenu);
+  document.addEventListener('click', closeClickMenu);
+  if (mainBanner.classList.value === 'main-banner') {
+    document.body.classList.remove('body--noscroll');
+  }
 }
 
 openMenuBtn.addEventListener('click', openMenu);
