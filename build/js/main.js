@@ -5,10 +5,24 @@ var ESCAPE_BUTTON = 'Escape';
 var openMenuBtn = document.querySelector('#open-menu');
 var menu = document.querySelector('.header__list-drop-menu');
 var mainBanner = document.querySelector('.main-banner');
+var anchors = document.querySelectorAll('a[href*="#"]');
 
 menu.classList.toggle('header__list-drop-menu--nojs');
 openMenuBtn.classList.toggle('header__menu-close-button');
 mainBanner.classList.toggle('main-banner--nojs');
+
+anchors.forEach(function (anchor) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    var blockID = anchor.getAttribute('href').substr(1);
+
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  });
+});
 
 function isEscEvent(evt) {
   return evt.key === ESCAPE_BUTTON || evt.key === ESC_BUTTON;
@@ -22,7 +36,7 @@ function closeEscMenu(evt) {
 }
 
 function closeClickMenu(evt) {
-  if(evt.target.classList.value === '' || evt.target.classList.value === 'main-banner__info-heading' || evt.target.classList.value === 'main-banner__info' || evt.target.classList.value === 'main-banner__info-text' || evt.target.classList.value === 'main-banner__form') {
+  if (evt.target.classList.value === '' || evt.target.classList.value === 'main-banner__info-heading' || evt.target.classList.value === 'main-banner__info' || evt.target.classList.value === 'main-banner__info-text' || evt.target.classList.value === 'main-banner__form') {
     openMenu();
     document.removeEventListener('click', closeClickMenu);
   }
@@ -41,5 +55,3 @@ function openMenu() {
 }
 
 openMenuBtn.addEventListener('click', openMenu);
-
-export {openMenu};
