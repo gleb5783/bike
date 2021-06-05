@@ -1,8 +1,8 @@
-.main-banner {
+.main-content {
   position: relative;
 }
 
-.main-banner--open-mob-menu {
+.main-content--open-mob-menu {
   margin: 568px 0 0 0;
 
   @media (min-width: 1024px) {
@@ -10,13 +10,13 @@
   }
 }
 
-.main-banner--nojs {
+.main-content--nojs {
   @media (max-width: 1023px) {
     margin-top: 245px;
   }
 }
 
-.main-banner__info {
+.main-content__info {
   background-image: url("../../img/bike-mob.jpg");
   background-repeat: no-repeat;
   min-height: 390px;
@@ -47,7 +47,7 @@
   }
 }
 
-.main-banner__logo-link {
+.main-content__logo-link {
   @media (min-width: 1024px) {
     display: inline-block;
     vertical-align: middle;
@@ -63,7 +63,7 @@
   }
 }
 
-.main-banner__logo {
+.main-content__logo {
   display: none;
 
   @media (min-width: 1024px) {
@@ -72,7 +72,7 @@
   }
 }
 
-.main-banner__info-heading {
+.main-content__info-heading {
   margin: 0;
   padding: 120px 0 0 0;
   font-size: 30px;
@@ -103,7 +103,7 @@
   }
 }
 
-.main-banner__info-text {
+.main-content__info-text {
   font-weight: 300;
   font-size: 18px;
   line-height: 32px;
@@ -133,7 +133,7 @@
   }
 }
 
-.main-banner__form {
+.main-content__form {
   background-color: $white;
   padding: 0 16px;
 
@@ -158,7 +158,7 @@
   }
 }
 
-.main-banner__form fieldset {
+.main-content__form fieldset {
   margin: 0;
   padding: 0;
   display: flex;
@@ -166,7 +166,7 @@
   border: none;
 }
 
-.main-banner__form legend {
+.main-content__form legend {
   padding: 70px 15px 20px;
   font-style: normal;
   font-weight: 600;
@@ -187,7 +187,7 @@
   }
 }
 
-.main-banner__form-input input {
+.main-content__form-input input {
   margin: 0 0 20px 0;
   border-radius: 6px;
   border: 1px solid $input-border;
@@ -215,7 +215,7 @@
   }
 }
 
-.main-banner__form-button {
+.main-content__form-button {
   display: block;
   cursor: pointer;
   font-family: "Open Sans", "Arial", sans-serif;
