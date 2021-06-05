@@ -74,30 +74,54 @@
   }
 }
 
-.bikes__list-item-road {
-  background-image: url("../../img/background-road-bike.svg");
-  background-repeat: no-repeat;
-  background-position: 0 204px;
+.bikes__list-item--road {
+  &::after {
+    content: "";
+    width: 127px;
+    height: 127px;
+    display: block;
+    background-image: url("../../img/background-road-bike.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 64px;
+    left: 0;
+    z-index: 1;
 
-  @media (min-width: 1440px) {
-    background-size: 180px 180px;
-    background-position: 0 218px;
+    @media (min-width: 768px) {
+      bottom: 76px;
+      left: -11px;
+    }
+
+    @media (min-width: 1024px) {
+      width: 180px;
+      height: 180px;
+      background-size: 180px 180px;
+      bottom: 220px;
+      left: -20px;
+    }
+  }
+
+  & picture {
+    z-index: 2;
   }
 }
 
-.bikes__list-item-road img {
+.bikes__list-item--road img {
+  z-index: 2;
+
   @media (min-width: 1440px) {
     margin: 60px 0 0 20px;
   }
 }
 
-.bikes__list-item-road p {
+.bikes__list-item--road p {
   @media (min-width: 1440px) {
     padding: 15px 0 0 15px;
   }
 }
 
-.bikes__list-item-mountains {
+.bikes__list-item--mountains {
   @media (min-width: 1440px) {
     &::before {
       content: "";
@@ -125,13 +149,13 @@
   }
 }
 
-.bikes__list-item-mountains img {
+.bikes__list-item--mountains img {
   @media (min-width: 1440px) {
     margin: 90px 0 0 0;
   }
 }
 
-.bikes__list-item-child {
+.bikes__list-item--child {
   &::before {
     content: "";
     width: 68px;
@@ -162,13 +186,13 @@
   }
 }
 
-.bikes__list-item-child img {
+.bikes__list-item--child img {
   @media (min-width: 1440px) {
     margin: 49px 20px 0 0;
   }
 }
 
-.bikes__list-item-child p {
+.bikes__list-item--child p {
   @media (min-width: 1440px) {
     padding: 16px 24px 0 0;
   }
@@ -182,6 +206,7 @@
   letter-spacing: -0.5px;
   padding: 17px 0 40px;
   margin: 0;
+  z-index: 2;
 
   @media (min-width: 768px) {
     padding: 13px 0 50px;

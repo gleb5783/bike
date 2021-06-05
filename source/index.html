@@ -37,38 +37,34 @@
 
   <header class="header">
     <nav class="header__main-nav">
-      <ul class="header__list">
-        <li class="header__list-item">
-          <a>
-            <svg class="header__logo" width="68" height="21">
-              <use xlink:href="#logo"></use>
-            </svg>
-          </a>
-          <button id="open-menu" class="header__menu-close-button header__menu-open-button" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <ul class="header__list-drop-menu header__list-drop-menu--nojs">
-            <li class="header__list-drop-menu-item">
-              <a href="#about-us">О нас</a>
-            </li>
-            <li class="header__list-drop-menu-item">
-              <a href="#bikes">Виды велосипедов</a>
-            </li>
-            <li class="header__list-drop-menu-item">
-              <a href="#bikes-video">Видео про велосипеды</a>
-            </li>
-            <li class="header__list-drop-menu-item">
-              <a href="#map">Контакты</a>
-            </li>
-            </ul>
+      <a class="header__link-logo--nojs">
+        <svg class="header__logo" width="68" height="21">
+          <use xlink:href="#logo"></use>
+        </svg>
+      </a>
+      <button id="open-menu" class="header__button--nojs" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="header__list-drop-menu header__list-drop-menu--open header__list-drop-menu--nojs">
+        <li class="header__list-drop-menu-item">
+          <a href="#about-us">О нас</a>
+        </li>
+        <li class="header__list-drop-menu-item">
+          <a href="#bikes">Виды велосипедов</a>
+        </li>
+        <li class="header__list-drop-menu-item">
+          <a href="#bikes-video">Видео про велосипеды</a>
+        </li>
+        <li class="header__list-drop-menu-item">
+          <a href="#map">Контакты</a>
         </li>
       </ul>
     </nav>
   </header>
   <main>
-    <section class="main-banner main-banner--nojs">
+    <section class="main-banner main-banner--open-mob-menu main-banner--nojs">
       <div class="main-banner__info">
-        <a class="header__logo-link">
+        <a class="main-banner__logo-link">
           <svg class="main-banner__logo" width="67" height="20">
             <use xlink:href="#logo"></use>
           </svg>
@@ -119,7 +115,7 @@
     <section class="bikes" id="bikes">
       <h2 class="bikes__heading">Виды велосипедов</h2>
       <ul class="bikes__list">
-        <li class="bikes__list-item bikes__list-item-road">
+        <li class="bikes__list-item bikes__list-item--road">
           <picture>
             <source media="(min-width: 1024px)" type="image/webp" srcset="img/road-bike-desk.webp 1x, img/road-bike-desk@2x.webp 2x">
             <source type="image/webp" srcset="img/road-bike-mob.webp 1x, img/road-bike-mob@2x.webp 2x">
@@ -128,7 +124,7 @@
           </picture>
           <p class="bikes__text">Дорожный велосипед</p>
         </li>
-        <li class="bikes__list-item bikes__list-item-mountains">
+        <li class="bikes__list-item bikes__list-item--mountains">
           <picture>
             <source media="(min-width: 1440px)" type="image/webp" srcset="img/mountains-bike-desk.webp 1x, img/mountains-bike-desk@2x.webp 2x">
             <source media="(min-width: 1024px)" type="image/webp" srcset="img/mountains-bike-desk.webp 1x, img/mountains-bike-desk@2x.webp 2x">
@@ -138,7 +134,7 @@
           </picture>
           <p class="bikes__text">Горный велосипед</p>
         </li>
-        <li class="bikes__list-item bikes__list-item-child">
+        <li class="bikes__list-item bikes__list-item--child">
           <picture>
             <source media="(min-width: 1024px)" type="image/webp" srcset="img/child-bike-desk.webp 1x, img/child-bike-desk@2x.webp 2x">
             <source type="image/webp" srcset="img/child-bike-mob.webp 1x, img/child-bike-mob@2x.webp 2x">
@@ -167,8 +163,8 @@
     </section>
   </main>
   <footer class="footer">
-    <a class="footer__link footer__menu--email" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-    <a class="footer__link footer__menu--phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
+    <a class="footer__link footer__link--email" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+    <a class="footer__link footer__link--phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
   </footer>
   <script src="js/main.js"></script>
 </body>
