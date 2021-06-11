@@ -1,5 +1,25 @@
 .main-content {
   position: relative;
+
+  @media (min-width: 1024px) {
+    background-size: cover;
+    background-color: $background-main-banner;
+    background-position: center;
+    min-height: 825px;
+    background-image: url("../img/bike-desk.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bike-desk@2x.jpg");
+    }
+  }
+}
+
+.main-content__desk-wrapper {
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .main-content--open-mob-menu {
@@ -17,7 +37,7 @@
 }
 
 .main-content__info {
-  background-image: url("../../img/bike-mob.jpg");
+  background-image: url("../img/bike-mob.jpg");
   background-repeat: no-repeat;
   min-height: 390px;
   background-size: cover;
@@ -25,25 +45,33 @@
   background-color: $background-main-banner;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/bike-mob@2x.jpg");
+    background-image: url("../img/bike-mob@2x.jpg");
   }
 
   @media (min-width: 768px) {
     min-height: 340px;
-    background-image: url("../../img/bike-tablet.jpg");
+    background-image: url("../img/bike-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/bike-tablet@2x.jpg");
+      background-image: url("../img/bike-tablet@2x.jpg");
     }
   }
 
   @media (min-width: 1024px) {
-    min-height: 825px;
-    background-image: url("../../img/bike-desk.jpg");
+    // min-height: 825px;
+    // background-image: url("../img/bike-desk.jpg");
+    background-image: none;
+    background-color: transparent;
+    min-height: auto;
+    flex-basis: 50%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/bike-desk@2x.jpg");
-    }
+    // @media (min-resolution: 2dppx) {
+    //   background-image: url("../img/bike-desk@2x.jpg");
+    // }
   }
 }
 
@@ -54,12 +82,13 @@
     padding: 318px 0 0 8%;
   }
 
-  @media (min-width: 1440px) {
-    margin: 0 0 0 12%;
+  @media (min-width: 1024px) {
+    margin: 0 326px 0 0;
+    padding: 324px 0 0 0;
   }
 
-  @media (min-width: 1920px) {
-    margin: 0 0 0 19%;
+  @media (min-width: 1440px) {
+    margin: 0 374px 0 0;
   }
 }
 
@@ -95,11 +124,7 @@
   }
 
   @media (min-width: 1440px) {
-    margin: 30px 0 24px 20%;
-  }
-
-  @media (min-width: 1920px) {
-    margin: 30px 0 24px 27%;
+    margin: 32px 45px 24px 0;
   }
 }
 
@@ -125,11 +150,7 @@
   }
 
   @media (min-width: 1440px) {
-    margin: 0 0 0 20%;
-  }
-
-  @media (min-width: 1920px) {
-    margin: 0 0 0 27%;
+    margin: 0 47px 0 0;
   }
 }
 
@@ -143,19 +164,20 @@
   }
 
   @media (min-width: 1024px) {
-    position: absolute;
-    top: 325px;
+    flex-basis: 50%;
+    // position: absolute;
+    // top: 325px;
     padding: 0;
     margin: 0;
-    right: 24%;
-    margin-right: -164px;
+    // right: 24%;
+    // margin-right: -164px;
     width: 328px;
     background-color: transparent;
   }
 
-  @media (min-width: 1440px) {
-    right: 31%;
-  }
+  // @media (min-width: 1440px) {
+  //   right: 31%;
+  // }
 }
 
 .main-content__form fieldset {
@@ -164,6 +186,11 @@
   display: flex;
   flex-direction: column;
   border: none;
+
+  @media (min-width: 1024px) {
+    margin: 324px 0 0 112px;
+    width: 327px;
+  }
 }
 
 .main-content__form legend {

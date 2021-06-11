@@ -41,15 +41,17 @@
   text-align: center;
   letter-spacing: -0.005em;
   color: rgba($white, 0.7%);
-  margin: 0 0 50px 0;
+  margin: 0;
+  padding-bottom: 164px;
 
   @media (min-width: 768px) {
-    padding: 0 160px;
+    padding: 0 160px 236px;
   }
 
   @media (min-width: 1024px) {
     max-width: 340px;
-    padding: 0;
+    font-size: 16px;
+    padding: 0 0 480px;
     margin: 0 auto;
   }
 }
@@ -58,20 +60,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
   width: 288px;
   height: 161px;
+  position: absolute;
   top: 92%;
   left: 50%;
   margin-left: -144px;
   margin-top: -80px;
-  background-image: url("../../img/video-bike.jpg");
+  background-image: url("../img/video-bike.jpg");
   background-color: $black;
   background-repeat: no-repeat;
   background-size: contain;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/video-bik@2x.jpg");
+    background-image: url("../img/video-bik@2x.jpg");
   }
 
   @media (min-width: 768px) {
@@ -80,10 +82,10 @@
     margin-left: -251px;
     margin-top: 141px;
     top: 18%;
-    background-image: url("../../img/video-bike-tablet.jpg");
+    background-image: url("../img/video-bike-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/video-bike-tablet@2x.jpg");
+      background-image: url("../img/video-bike-tablet@2x.jpg");
     }
   }
 
@@ -94,10 +96,10 @@
     left: 50%;
     margin-left: -465px;
     margin-top: -261px;
-    background-image: url("../../img/video-bike-desk.jpg");
+    background-image: url("../img/video-bike-desk.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/video-bike-desk@2x.jpg");
+      background-image: url("../img/video-bike-desk@2x.jpg");
     }
   }
 }
@@ -110,12 +112,12 @@
   height: 65px;
   cursor: pointer;
   background-color: transparent;
-  background-image: url("../../img/play.svg");
+  background-image: url("../img/play.svg");
   background-repeat: no-repeat;
   border: none;
 
   &:hover {
-    background-image: url("../../img/play-background.svg");
+    background-image: url("../img/play-background.svg");
   }
 
   @media (min-width: 768px) and (max-width: 1023px) {

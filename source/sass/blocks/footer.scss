@@ -1,26 +1,35 @@
 .footer {
+  min-height: 151px;
+}
+
+.footer__list {
+  padding: 0;
+  margin: 29px 0 0 0;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  min-height: 151px;
-
-  @media (min-width: 330px) {
-    align-items: center;
-  }
 
   @media (min-width: 768px) {
     flex-direction: row;
-    justify-content: center;
-    margin: 0 105px;
-    min-height: auto;
+    justify-content: space-evenly;
+    margin: 22px 0 0 0;
   }
 
   @media (min-width: 1024px) {
-    max-width: 546px;
-    width: 100%;
+    margin: 39px auto 0;
+    max-width: 547px;
     justify-content: space-between;
-    margin: 0 auto;
   }
+}
+
+.footer__list-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 24px 0;
+  padding: 10px 0;
 }
 
 .footer__link {
@@ -41,19 +50,7 @@
 }
 
 .footer__link--email {
-  margin: 31px 0 22px 71px;
-
-  @media (min-width: 330px) {
-    margin: 31px 0 22px;
-  }
-
-  @media (min-width: 768px) {
-    margin: 20px 90px 52px 0;
-  }
-
-  @media (min-width: 1024px) {
-    margin: 39px 31px 98px;
-  }
+  padding: 0 0 0 48px;
 
   &::before {
     content: "";
@@ -61,23 +58,31 @@
     height: 20px;
     display: block;
     position: absolute;
-    top: 2px;
-    left: -41px;
-    background-image: url("../../img/mail.svg");
+    top: 1px;
+    left: 7px;
+    background-image: url("../img/mail.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: 768px) {
+      left: -5px;
+    }
+
+    @media (min-width: 1024px) {
+      left: -9px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding: 0 0 0 36px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0 0 0 33px;
   }
 }
 
 .footer__link--phone {
-  margin: 0 0 0 96px;
-
-  @media (min-width: 330px) {
-    margin: 0;
-  }
-
-  @media (min-width: 768px) {
-    margin: 20px 0 52px;
-  }
+  padding: 0 0 0 23px;
 
   &::before {
     content: "";
@@ -85,13 +90,13 @@
     height: 24px;
     display: block;
     position: absolute;
-    top: 0;
-    left: -41px;
-    background-image: url("../../img/phone.svg");
+    top: -4px;
+    left: -13px;
+    background-image: url("../img/phone.svg");
     background-repeat: no-repeat;
   }
 
   @media (min-width: 1024px) {
-    margin: 39px 0 98px;
+    padding: 0 8px 0 24px;
   }
 }

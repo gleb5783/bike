@@ -63,30 +63,32 @@
   </header>
   <main>
     <section class="main-content main-content--open-mob-menu main-content--nojs">
-      <div class="main-content__info">
-        <a class="main-content__logo-link">
-          <svg class="main-content__logo" width="67" height="20">
-            <use xlink:href="#logo"></use>
-          </svg>
-        </a>
-        <h1 class="main-content__info-heading">Мы продаем велосипеды</h1>
-        <p class="main-content__info-text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-      </div>
-      <div class="main-content__form">
-        <form method="GET" action="#" id="main-form">
-          <fieldset>
-            <legend>Заполните поля ниже и мы подберем велосипед Вашей мечты</legend>
-            <div class="main-content__form-input">
-              <input type="text" name="name" id="name" placeholder="Введите Ваше Имя" required="">
-              <label class="visually-hidden" for="name">Введите ваше имя</label>
-            </div>
-            <div class="main-content__form-input">
-              <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" pattern="[\+7|8]\d{10}" required="">
-              <label class="visually-hidden" for="phone">Введите ваш номер телефона</label>
-            </div>
-            <button class="main-content__form-button" type="submit">Подобрать велосипед мечты</button>
-          </fieldset>
-        </form>
+      <div class="main-content__desk-wrapper">
+        <div class="main-content__info">
+          <a class="main-content__logo-link">
+            <svg class="main-content__logo" width="67" height="20">
+              <use xlink:href="#logo"></use>
+            </svg>
+          </a>
+          <h1 class="main-content__info-heading">Мы продаем велосипеды</h1>
+          <p class="main-content__info-text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        </div>
+        <div class="main-content__form">
+          <form method="GET" action="#" id="main-form">
+            <fieldset>
+              <legend>Заполните поля ниже и мы подберем велосипед Вашей мечты</legend>
+              <div class="main-content__form-input">
+                <input type="text" name="name" id="name" placeholder="Введите Ваше Имя" required="">
+                <label class="visually-hidden" for="name">Введите ваше имя</label>
+              </div>
+              <div class="main-content__form-input">
+                <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" pattern="[\+7|8]\d{10}" required="">
+                <label class="visually-hidden" for="phone">Введите ваш номер телефона</label>
+              </div>
+              <button class="main-content__form-button" type="submit">Подобрать велосипед мечты</button>
+            </fieldset>
+          </form>
+        </div>
       </div>
     </section>
     <section class="about-us" id="about-us">
@@ -163,8 +165,14 @@
     </section>
   </main>
   <footer class="footer">
-    <a class="footer__link footer__link--email" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-    <a class="footer__link footer__link--phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
+    <ul class="footer__list">
+      <li class="footer__list-item">
+        <a class="footer__link footer__link--email" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+      </li>
+      <li class="footer__list-item">
+        <a class="footer__link footer__link--phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
+      </li>
+    </ul>
   </footer>
   <script src="js/main.js"></script>
 </body>

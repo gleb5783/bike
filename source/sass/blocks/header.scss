@@ -37,7 +37,7 @@
   width: 50px;
   height: 50px;
   background-color: $background-btn;
-  background-image: url("../../img/burger.svg");
+  background-image: url("../img/burger.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
@@ -56,7 +56,7 @@
 }
 
 .header__menu-close-button {
-  background-image: url("../../img/close.svg");
+  background-image: url("../img/close.svg");
   background-color: transparent;
   padding: 0;
   position: absolute;
@@ -99,7 +99,7 @@
     background-color: transparent;
     flex-direction: row;
     border-bottom: 1px solid rgba($white, 0.2%);
-    padding: 0 16px;
+    padding: 0;
     min-height: auto;
     position: absolute;
     top: 0;
@@ -137,6 +137,7 @@
     background-color: transparent;
     margin: 0;
     min-height: auto;
+    padding: 0 16px;
   }
 }
 
@@ -158,7 +159,7 @@
     position: absolute;
     top: 16px;
     right: 16px;
-    background-image: url("../../img/arrow.svg");
+    background-image: url("../img/arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
