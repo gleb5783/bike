@@ -105,7 +105,8 @@
     top: 0;
     left: 50%;
     margin-left: -436px;
-    min-width: 874px;
+    max-width: 874px;
+    width: 100%;
     z-index: 1;
     justify-content: space-between;
   }

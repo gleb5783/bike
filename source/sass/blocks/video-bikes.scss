@@ -1,6 +1,5 @@
 .bikes-video {
   background-color: $background-video;
-  padding: 0 18px;
   min-height: 384px;
   position: relative;
 
@@ -19,7 +18,7 @@
   line-height: 30px;
   letter-spacing: -0.005em;
   color: $white;
-  padding: 86px 0 20px;
+  padding: 86px 10px 20px;
   margin: 0;
   text-align: center;
 
@@ -42,35 +41,37 @@
   letter-spacing: -0.005em;
   color: rgba($white, 0.7%);
   margin: 0;
-  padding-bottom: 164px;
+  padding: 0 10px;
 
   @media (min-width: 768px) {
-    padding: 0 160px 236px;
+    padding: 0 160px;
   }
 
   @media (min-width: 1024px) {
     max-width: 340px;
     font-size: 16px;
-    padding: 0 0 480px;
     margin: 0 auto;
+    padding: 0;
   }
 }
 
 .bikes-video__video-wrapper {
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 288px;
   height: 161px;
   position: absolute;
-  top: 92%;
+  // top: 92%;
   left: 50%;
+  bottom: -51px;
   margin-left: -144px;
-  margin-top: -80px;
+  // margin-top: -80px;
   background-image: url("../img/video-bike.jpg");
   background-color: $black;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/video-bik@2x.jpg");
@@ -80,8 +81,9 @@
     width: 503px;
     height: 282px;
     margin-left: -251px;
-    margin-top: 141px;
-    top: 18%;
+    // margin-top: 141px;
+    // top: 18%;
+    bottom: -86px;
     background-image: url("../img/video-bike-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -92,10 +94,11 @@
   @media (min-width: 1024px) {
     width: 929px;
     height: 522px;
-    top: 77%;
+    // top: 77%;
     left: 50%;
+    bottom: -100px;
     margin-left: -465px;
-    margin-top: -261px;
+    // margin-top: -261px;
     background-image: url("../img/video-bike-desk.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -124,5 +127,18 @@
     width: 90px;
     height: 90px;
     background-size: 90px 90px;
+  }
+}
+
+.bikes-video__wrapper {
+  height: 114px;
+  margin-top: 50px;
+
+  @media (min-width: 768px) {
+    height: 186px;
+  }
+
+  @media (min-width: 1024px) {
+    height: 430px;
   }
 }
