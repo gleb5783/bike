@@ -86,21 +86,23 @@
 .header__list-drop-menu {
   display: none;
   flex-direction: column;
-  flex-wrap: wrap;
   flex-basis: 100%;
+  overflow-y: scroll;
   margin: 0;
   list-style: none;
   background-color: $white;
-  min-height: 568px;
-  padding: 100px 0 0 0;
+  height: 100vh;
+  padding: 100px 0 50px 0;
 
   @media (min-width: 1024px) {
+    overflow-y: visible;
     display: flex;
+    flex-wrap: wrap;
+    height: auto;
     background-color: transparent;
     flex-direction: row;
     border-bottom: 1px solid rgba($white, 0.2%);
     padding: 0;
-    min-height: auto;
     position: absolute;
     top: 0;
     left: 50%;
@@ -108,7 +110,8 @@
     max-width: 874px;
     width: 100%;
     z-index: 1;
-    justify-content: space-between;
+    gap: 0 107px;
+    justify-content: flex-start;
   }
 }
 
